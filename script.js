@@ -55,8 +55,8 @@ function selectCard(cardElement, card) {
     cardElement.classList.remove("selected-card");
     removeCardFromSet(card);
   } else {
-    if (getSelectedCardsCount() >= 6) {
-      alert("You can only select up to 6 cards.");
+    if (getSelectedCardsCount() >= 60) {
+      alert("You can only select up to 60 cards.");
       return;
     }
     cardElement.classList.add("selected-card");
